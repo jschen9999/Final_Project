@@ -1,0 +1,35 @@
+div{
+    width:350px;
+    height:200px;
+    margin:100px 0px 0px 100px;
+    background-color:lightseagreen;
+    animation-duration: 3s;
+    animation-name: colour;
+
+}
+
+img{
+    width:100px;
+    height:100px;
+    margin:-40px 0px 0px 115px;
+    -webkit-animation :'rotate1' 3s linear infinite;
+    animation:'rotate1' 3s linear infinite;
+}
+
+@keyframes colour {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+@-webkit-keyframes rotate1{
+    form{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}    
+}
+
+@keyframes rotate1{
+    form{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}    
+}
